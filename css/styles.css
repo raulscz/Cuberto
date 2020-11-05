@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    /* font */
+    font-family: "Averta CY", sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* Style the header */
+
+.header {
+    text-align: left;
+    padding: 10% 20px;
+}
+
+.header h1 {
+    font-size: 80px;
+    color: cornflowerblue;
+}
+
+.header h2 {
+    font-size: 30px;
+}
+
+
+/*Style the columns*/
+
+#section-1 {
+    background-color: #f5eef5;
+}
+
+#section-2 {
+    background-color: #f4f5f3;
+}
+
+#section-3 {
+    background-color: #f2f9f8;
+}
+
+#section-4 {
+    background-color: black;
+    color: white;
+}
+
+.one-column {
+    float: left;
+    width: 100%;
+    padding: 7%;
+}
+
+.two-column {
+    float: left;
+    width: 50%;
+    padding: 7%;
+}
+
+.two-column img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.four-column {
+    float: left;
+    width: 25%;
+    padding: 7%;
+}
+
+
+/*Style the text*/
+
+.h1 {
+    font-size: 4.5vw;
+    color: grey;
+}
+
+.h2 {
+    font-size: 3vw;
+}
+
+.h3 {
+    font-size: 2vw;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width:600px) {
+    .header h1 {
+        font-size: 13vw;
+    }
+    .header h2 {
+        font-size: 5vw;
+    }
+    .one-column {
+        width: 100%;
+    }
+    .two-column {
+        width: 100%;
+    }
+    .four-column {
+        width: 50%;
+    }
+    .h1 {
+        font-size: 3.5vw;
+        color: grey;
+    }
+    .h2 {
+        font-size: 3vw;
+    }
+    .h3 {
+        font-size: 2.5vw;
+    }
+    #section-4 p {
+        font-size: 2.5vw;
+    }
+}
